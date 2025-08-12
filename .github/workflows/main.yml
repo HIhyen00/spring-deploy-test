@@ -56,7 +56,6 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: 22
         script: |
-          cd /HyeinKim/demo
           cd /home/ec2-user/spring-deploy-test
           docker-compose down
 
