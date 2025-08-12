@@ -49,10 +49,6 @@ jobs:
     name: Deploy
     runs-on: [ self-hosted, deploy-spring-test ]
     steps:
-      - name: Force lowercase DOCKER_IMAGE
-        run: |
-          echo "DOCKER_IMAGE=ghcr.io/$(echo '${{ secrets.ACTOR }}' | tr '[:upper:]' '[:lower:]')/spring-backend:latest" >> $GITHUB_ENV
-
       - name: Deploy to Production
         run: |
           echo "Starting Backend Production Deployment"
