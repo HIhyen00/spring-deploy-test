@@ -22,7 +22,7 @@ jobs:
 
       - name: Create application.yaml for CD Deploy
         run: |
-          echo "${{ secrets.PRODUCTION_ENV }} > .env
+          echo "${{ secrets.PRODUCTION_ENV }}" > .env
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
