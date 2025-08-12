@@ -41,8 +41,6 @@ public class LaptopServiceImpl implements LaptopService {
         // account의 Company와 laptop의 제조사가 같은지 확인 후,
         // 같으면 저장, 같지 않으면 권한이 없음을 고지
 
-        
-
         Laptop requestLaptop = request.toLaptop(company, account);
         Laptop savedLaptop = laptopRepository.save(requestLaptop);
 
