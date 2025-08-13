@@ -59,5 +59,3 @@ github:
   redirect-uri: ${GITHUB_REDIRECT_URI}
   token-request-uri: ${GITHUB_TOKEN_REQUEST_URI}
   user-info-request-uri: ${GITHUB_USER_INFO_REQUEST_URI}
-
-debug: true
